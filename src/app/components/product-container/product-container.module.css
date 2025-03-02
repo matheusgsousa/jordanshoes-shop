@@ -1,0 +1,36 @@
+.container {
+  font-weight: 500;
+  color: var(--dark-10);
+}
+.title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.type {
+  font-size: 16px;
+  color: #7ca2f4;
+}
+.price {
+  font-family: var(--font-space-grotesk);
+  font-size: 20px;
+  margin-top: 24px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.imageContainer {
+  background-color: #f3f7ff;
+  width: 384px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1440px) {
+  .imageContainer {
+    width: 336px;
+  }
+}

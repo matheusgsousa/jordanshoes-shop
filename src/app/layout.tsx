@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
-import { Archivo } from 'next/font/google';
+import { Archivo, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
 const archivoFont = Archivo({
   variable: '--font-archivo',
+  subsets: ['latin'],
+});
+
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-space-grotesk',
   subsets: ['latin'],
 });
 
@@ -19,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${archivoFont.variable}`}>{children}</body>
+      <body className={`${archivoFont.variable} ${spaceGrotesk.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
